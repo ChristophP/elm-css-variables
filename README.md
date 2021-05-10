@@ -58,7 +58,7 @@ The functions in this package use a little trick. Instead of using the regular `
 
 ```elm
   div
-    [ attribute "style" "--textColor: blue; --fontSize: 1.2rem;" ++ if darkBackground then "--background: gray;" else "" ]
+    [ attribute "style" ("--textColor: blue; --fontSize: 1.2rem;" ++ if darkBackground then "--background: gray;" else "") ]
     [ text "Long style string!" ]
 ```
 
